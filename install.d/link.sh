@@ -5,4 +5,4 @@ ln -s $DOTDIR/.vim $HOME
 
 
 # neovim
-ln -s $DOTDIR/.vim/vimrc $DOTDIR/nvim/init.vim
+ln -s $DOTDIR/.config/nvim/init.vim $DOTDIR/nvim/init.vim
