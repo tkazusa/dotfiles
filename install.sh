@@ -5,7 +5,7 @@ DOTDIR=$HOME/src/github.com/tkazusa/dotfiles
 
 # install packages
 if which apt-get > /dev/null; then
-   sudo apt-get -y install git
+   apt-get -y install git
    git clone $DOTFILES_REMOTE $DOTDIR
    source $DOTDIR/install.d/apt.sh
 

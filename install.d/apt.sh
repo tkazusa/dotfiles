@@ -6,9 +6,9 @@ APT_CMD="sudo apt-get install -y"
 $APT_CMD gawk git golang vim wget
 
 # tmux
-sudo add-apt-repository -y ppa:pi-rho/dev
-sudo apt-get Update
-sudo apt-get install -y tmux
+add-apt-repository -y ppa:pi-rho/dev
+apt-get Update
+apt-get install -y tmux
 
 # build tools
 $APT_CMD make build-essential
@@ -23,13 +23,13 @@ $APT_CMD graphviz
 $APT_CMD software-properties-common
 
 # Installing python-software-properties for ubuntu
-sudo apt-get install python-software-properties
+apt-get install python-software-properties
 
 # Adding neovim reposigory to apt-get
-sudo add-apt-repository ppa:neovim-ppa/stable
+add-apt-repository ppa:neovim-ppa/stable
 
 #Update reposigory
-sudo apt-get update
+apt-get update
 
 # Installing neovim
 $APT_CMD neovim
