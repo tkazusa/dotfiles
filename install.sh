@@ -22,10 +22,3 @@ if ! `grep "\[include\]" $HOME/.gitconfig > /dev/null`; then
 	path = $DOTDIR/.gitconfig.local
 EOF
 fi
-
-
-nvim -c "
-set shortmess=a
-set nomore
-call dein#update()
-q"
