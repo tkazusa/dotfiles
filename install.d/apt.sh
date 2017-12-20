@@ -3,12 +3,30 @@
 APT_CMD="apt-get install -y"
 
 # common
-$APT_CMD gawk git golang vim wget
+$APT_CMD gawk git golang vim wget tar libevent-dev libncurses-dev
 
 # tmux
-add-apt-repository -y ppa:pi-rho/dev
-apt-get Update
-apt-get install -y tmux
+#add-apt-repository -y ppa:pi-rho/dev
+#apt-get Update
+#apt-get install -y tmux
+
+# Steps to build and install tmux from source on Ubuntu.
+# Takes < 25 seconds on EC2 env [even on a low-end config instance].
+VERSION=2.5
+apt-get -y remove tmux
+wget https://github.com/tmux/tmux/releases/download/${VERSION}/tmux-${VERSION}.tar.gz
+tar xf tmux-${VERSION}.tar.gz
+rm -f tmux-${VERSION}.tar.gz
+cd tmux-${VERSION}
+./configure
+make
+make install
+cd -
+rm -rf /usr/local/src/tmux-*
+mv tmux-${VERSION} /usr/local/src
+
+## Logout and login to the shell again and run.
+## tmux -V
 echo "export TERM=xterm-256color" >> .bashrc
 
 # build tools
