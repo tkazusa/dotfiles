@@ -1,7 +1,8 @@
 #!/bin/bash
 
 DOTFILES_REMOTE=https://github.com/tkazusa/dotfiles
-DOTDIR=$HOME/src/github.com/tkazusa/dotfiles
+#DOTDIR=$HOME/src/github.com/tkazusa/dotfiles
+DOTDIR=$HOME/dotfiles
 
 # install packages
 if which apt-get > /dev/null; then
