@@ -9,6 +9,7 @@ $APT_CMD gawk git golang vim wget
 add-apt-repository -y ppa:pi-rho/dev
 apt-get Update
 apt-get install -y tmux
+echo "export TERM=xterm-256color" >> .bashrc
 
 # build tools
 $APT_CMD make build-essential
