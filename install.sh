@@ -22,3 +22,7 @@ if ! `grep "\[include\]" $HOME/.gitconfig > /dev/null`; then
 	path = $DOTDIR/.gitconfig.local
 EOF
 fi
+
+
+#alias
+alias vi='nvim'
