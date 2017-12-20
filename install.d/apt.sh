@@ -36,7 +36,7 @@ $APT_CMD neovim
 
 # Config files for neovim
 mkdir -p ~/.config/nvim
-touch ~/.config/nvim/init.vim
+# touch ~/.config/nvim/init.vim
 
 
 # Prep for python3
