@@ -1,6 +1,8 @@
 
 " python2のインターフェースを無効にする
 let g:jedi#force_py_version = 3
+set number
+set cursorline
 
 
 

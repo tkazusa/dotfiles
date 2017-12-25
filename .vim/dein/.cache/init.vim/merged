@@ -1,0 +1,2 @@
+100
+['Shougo/dein.vim', 'Shougo/denite.nvim', 'Shougo/neomru.vim', 'Shougo/unite.vim', 'Shougo/vimproc.vim', 'davidhalter/jedi-vim', 'hynek/vim-python-pep8-indent']
