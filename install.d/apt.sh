@@ -55,3 +55,13 @@ $APT_CMD neovim
 
 # Prep for python3
 pip3 install --upgrade neovim
+
+
+#Install fish
+$APT_CMD apt-file
+apt-file update
+$APT_CMD software-properties-common
+apt-add-repository ppa:fish-shell/release-2
+$APT_CMD fish
+
+
