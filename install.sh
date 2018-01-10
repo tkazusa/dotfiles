@@ -26,3 +26,12 @@ fi
 
 #alias
 alias vi='nvim'
+
+#change shell from bash to fish
+chsh -s /usr/bin/fish
+#install oh-my-fish
+curl -L http://get.oh-my.fish | fish  
+#install peco plugin to oh-my-fish
+omf install peco
+
+
