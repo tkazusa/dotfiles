@@ -53,10 +53,5 @@ apt-get update
 # Installing neovim
 $APT_CMD neovim
 
-# Config files for neovim
-mkdir -p ~/.config/nvim
-# touch ~/.config/nvim/init.vim
-
-
 # Prep for python3
 pip3 install --upgrade neovim
