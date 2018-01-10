@@ -7,9 +7,7 @@ ln -s $DOTDIR/.vim $HOME
 
 # .config
 mkdir -p $HOMR/.config
-ln -s $DOTDIR/.config/nvim/init.vim $HOME/.config/nvim/init.vim
-ln -s $DOTDIR/.config/nvim/colors $HOME/.config/nvim/colors
-ln -s $DOTDIR/.config/fish ln -s $HOME/.config/fish 
+ln -s $DOTDIR/.config $HOME/.config
 
 # bashrc
 ln -s $DOTDIR/.bashrc $HOME/.bashrc
