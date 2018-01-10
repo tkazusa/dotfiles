@@ -65,3 +65,8 @@ apt-add-repository ppa:fish-shell/release-2
 $APT_CMD fish
 
 
+#Install peco
+wget https://github.com/peco/peco/releases/download/v0.5.1/peco_linux_amd64.tar.gz
+tar zxvf peco_linux_amd64.tar.gz
+cp peco_linux_amd64/peco /usr/local/bin/
+chmod 777 /usr/local/bin/peco
