@@ -26,10 +26,10 @@ fi
 #change shell from bash to fish
 chsh -s /usr/bin/fish
 #install oh-my-fish
-curl -L http://get.oh-my.fish | fish  
+#curl -L http://get.oh-my.fish | fish  
 
 
 exec fish
 
 #install peco plugin to oh-my-fish
-omf install peco
+#omf install peco
