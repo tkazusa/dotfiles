@@ -11,7 +11,7 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-let s:dein_path = expand('~/.vim/dein')
+let s:dein_path = expand('~/.cache/dein')
 let s:dein_repo_path = s:dein_path . '/repos/github.com/Shougo/dein.vim'
 
 " dein.vim がなければ github からclone
@@ -19,13 +19,13 @@ if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_path)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_path
   endif
-  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_path, ':p')
+  execute 'set runtimepath^=' . s:dein_repo_path
 endif
 
 if dein#load_state(s:dein_path)
   call dein#begin(s:dein_path)
 
-  let g:config_dir  = expand('~/.vim/dein/rc')
+  let g:config_dir  = expand('~/.vim/rc')
   let s:toml        = g:config_dir . '/plugin.toml'
   let s:lazy_toml   = g:config_dir . '/plugin_lazy.toml'
 
