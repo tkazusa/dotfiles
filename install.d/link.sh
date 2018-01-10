@@ -1,13 +1,13 @@
 #!/bin/bash
+DOTDIR=$HOME/dotfiles
 
 ln -s $DOTDIR/.tmux.conf $HOME
 ln -s $DOTDIR/.vim $HOME
 
 
-# neovim
-mkdir -p $HOMR/.config/nvim
-ln -s $DOTDIR/.config/nvim/init.vim $HOME/.config/nvim/init.vim
-ln -s $DOTDIR/.config/nvim/colors $HOME/.config/nvim/colors
+# .config
+mkdir -p $HOMR/.config/
+ln -s $DOTDIR/.config/ $HOME/.config/
 
 # bashrc
 ln -s $DOTDIR/.bashrc $HOME/.bashrc
