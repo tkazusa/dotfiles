@@ -35,3 +35,4 @@ curl -L http://get.oh-my.fish | fish
 omf install peco
 
 
+exec fish
