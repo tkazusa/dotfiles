@@ -31,5 +31,5 @@ chsh -s /usr/bin/fish
 
 exec fish
 
-#install peco plugin to oh-my-fish
-#omf install peco
+install peco plugin to oh-my-fish
+omf install peco
