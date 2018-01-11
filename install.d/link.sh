@@ -6,7 +6,6 @@ ln -s $DOTDIR/.vim $HOME
 
 
 # .config
-mkdir -p $HOME/.config
 ln -s $DOTDIR/.config $HOME/.config
 
 # bashrc
