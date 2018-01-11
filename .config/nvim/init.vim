@@ -50,3 +50,5 @@ if dein#check_install()
   call dein#install()
 endif
 "End dein Scripts-------------------------
+
+filetype detect
