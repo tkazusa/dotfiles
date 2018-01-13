@@ -5,8 +5,6 @@ set number
 set cursorline
 
 
-
-"dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
@@ -49,4 +47,5 @@ set t_Co=256
 if dein#check_install()
   call dein#install()
 endif
-"End dein Scripts-------------------------
+
+filetype detect
