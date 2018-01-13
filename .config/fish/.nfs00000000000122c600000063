@@ -66,6 +66,12 @@
   when: 1515650805
   paths:
     - .config/fish/
+- cmd: vi config.fish 
+  when: 1515650812
+  paths:
+    - config.fish
+- cmd: v
+  when: 1515650841
 - cmd: cd,
   when: 1515651122
 - cmd: vi plugin.toml
@@ -76,6 +82,10 @@
   when: 1515651230
   paths:
     - rc/plugin_lazy.toml
+- cmd: cd .config/nvim/
+  when: 1515651437
+  paths:
+    - .config/nvim/
 - cmd: v init.vim 
   when: 1515651441
   paths:
@@ -397,6 +407,10 @@
   when: 1515822386
 - cmd: git push origin maseter
   when: 1515822393
+- cmd: cd hoe/
+  when: 1515822540
+  paths:
+    - hoe/
 - cmd: cp train_conditional.py CVAE-GAN/train_conditional.py
   when: 1515822576
   paths:
@@ -454,6 +468,14 @@
   when: 1515823581
   paths:
     - base.py
+- cmd: cd models/
+  when: 1515823630
+  paths:
+    - models/
+- cmd: v cvaegan.py 
+  when: 1515823632
+  paths:
+    - cvaegan.py
 - cmd: cp cvaegan.py cvaegan2.py
   when: 1515823662
   paths:
@@ -466,6 +488,8 @@
   when: 1515827445
   paths:
     - CVAE-GAN/graimg
+- cmd: htop
+  when: 1515827487
 - cmd: python3 train_conditional.py 
   when: 1515828121
   paths:
@@ -526,6 +550,10 @@
   when: 1515833907
   paths:
     - models/layers.py
+- cmd: cd CVAE-GAN/
+  when: 1515837322
+  paths:
+    - CVAE-GAN/
 - cmd: python3 data/gen_gravure_data.py 
   when: 1515837677
   paths:
@@ -617,6 +645,8 @@
   when: 1515843459
 - cmd: :wq
   when: 1515843985
+- cmd: cd
+  when: 1515844591
 - cmd: fish_config
   when: 1515844928
 - cmd: v dotfiles/.config/fish/config.fish 
@@ -627,6 +657,8 @@
   when: 1515845191
 - cmd: aexitb
   when: 1515845662
+- cmd: exit
+  when: 1515845676
 - cmd: v dotfiles/.tmux.conf 
   when: 1515845678
   paths:
@@ -635,22 +667,54 @@
   when: 1515845730
   paths:
     - dotfiles/
+- cmd: v test.py
+  when: 1515845748
+  paths:
+    - test.py
 - cmd: rm test.py 
   when: 1515845811
   paths:
     - test.py
 - cmd: git commit -m "modify .tmux.conf config.fish"
   when: 1515845813
+- cmd: cd ..
+  when: 1515846291
+  paths:
+    - ..
 - cmd: ;;
   when: 1515846292
+- cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=150 --dataset=data/gravure.hdf5  --output=gra_out
+  when: 1515840731
+  paths:
+    - train_CVAE-GAN.py
+- cmd: cd hoe/CVAE-GAN/
+  when: 1515846306
+  paths:
+    - hoe/CVAE-GAN/
+- cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=170 --dataset=data/gravure.hdf5  --output=gra_out
+  when: 1515846590
+  paths:
+    - train_CVAE-GAN.py
+- cmd: v models/cvaegan.py 
+  when: 1515846315
+  paths:
+    - models/cvaegan.py
+- cmd: tmux a
+  when: 1515842753
 - cmd: git commit -m "modify trainable layers"
   when: 1515846720
+- cmd: tmux
+  when: 1515846824
+- cmd: ll
+  when: 1515846852
 - cmd: git pull 
   when: 1515846945
 - cmd: v .config/nvim/init.vim 
   when: 1515847003
   paths:
     - .config/nvim/init.vim
+- cmd: git push origin master
+  when: 1515847091
 - cmd: rm .config/nvim/init.vim 
   when: 1515847146
   paths:
@@ -671,16 +735,34 @@
   when: 1515847337
   paths:
     - .tmux.conf
+- cmd: git add .
+  when: 1515847356
+  paths:
+    - .
 - cmd: git status
   when: 1515847358
+- cmd: git commit -m "modify"
+  when: 1515847389
 - cmd: git pull
   when: 1515847401
+- cmd: ll
+  when: 1515847404
 - cmd: cd .config/nvim/
   when: 1515847408
   paths:
     - .config/nvim/
+- cmd: ll
+  when: 1515847410
 - cmd: v init.vim
   when: 1515847433
+- cmd: cd ..
+  when: 1515847488
+  paths:
+    - ..
+- cmd: cd ../
+  when: 1515847493
+  paths:
+    - ../
 - cmd: git add 
   when: 1515847497
 - cmd: git add .
@@ -691,12 +773,44 @@
   when: 1515847503
 - cmd: git push origin master
   when: 1515847508
+- cmd: exit
+  when: 1515847535
+- cmd: exit
+  when: 1515847536
+- cmd: tmux a
+  when: 1515846675
+- cmd: exit
+  when: 1515847537
+- cmd: tmux
+  when: 1515847543
+- cmd: ll
+  when: 1515847545
 - cmd: help
   when: 1515847725
+- cmd: ll
+  when: 1515847807
+- cmd: ll
+  when: 1515848241
+- cmd: v models/cvaegan.py 
+  when: 1515848244
+  paths:
+    - models/cvaegan.py
+- cmd: tmux a
+  when: 1515846687
+- cmd: tmux a
+  when: 1515862459
+- cmd: cd ..
+  when: 1515862620
+  paths:
+    - ..
+- cmd: ll
+  when: 1515862642
 - cmd: cd models/
   when: 1515862648
   paths:
     - models/
+- cmd: ll
+  when: 1515862649
 - cmd: v cvaegan.py 
   when: 1515862653
   paths:
@@ -709,93 +823,53 @@
   when: 1515862746
   paths:
     - CVAE-GAN/
+- cmd: ll
+  when: 1515862746
+- cmd: v models/cvaegan.py 
+  when: 1515862751
+  paths:
+    - models/cvaegan.py
 - cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=180 --dataset=data/gravure.hdf5  --output=gra_out
   when: 1515862823
   paths:
     - train_CVAE-GAN.py
+- cmd: ll
+  when: 1515862883
+- cmd: ll
+  when: 1515862917
+- cmd: htop
+  when: 1515862963
+- cmd: cd hoe/
+  when: 1515862997
+  paths:
+    - hoe/
 - cmd: v test.py
   when: 1515863003
-  paths:
-    - test.py
 - cmd: v
   when: 1515863009
 - cmd: neo
   when: 1515863094
+- cmd: tmux a
+  when: 1515862924
+- cmd: tmux a
+  when: 1515862475
 - cmd: neovim 
   when: 1515863126
+- cmd: ll
+  when: 1515863128
 - cmd: vim
   when: 1515863137
 - cmd: cd ../
   when: 1515863152
   paths:
     - ../
+- cmd: ll
+  when: 1515863154
 - cmd: cd dotfiles/.config/fish/
   when: 1515863160
   paths:
     - dotfiles/.config/fish/
 - cmd: less config.fish 
   when: 1515863169
-  paths:
-    - config.fish
-- cmd: vi config.fish 
-  when: 1515863182
-  paths:
-    - config.fish
-- cmd: cd
-  when: 1515863185
-- cmd: cd hoe/
-  when: 1515863191
-  paths:
-    - hoe/
-- cmd: vi test.py
-  when: 1515863198
-- cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=170 --dataset=data/gravure.hdf5  --output=gra_out
-  when: 1515863247
-  paths:
-    - train_CVAE-GAN.py
-- cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=175 --dataset=data/gravure.hdf5  --output=gra_out
-  when: 1515863329
-  paths:
-    - train_CVAE-GAN.py
-- cmd: v models/cvaegan.py 
-  when: 1515863319
-  paths:
-    - models/cvaegan.py
-- cmd: exit
-  when: 1515863579
-- cmd: tmux a
-  when: 1515863585
-- cmd: tmux
-  when: 1515863588
-- cmd: htop
-  when: 1515863613
-- cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=150 --dataset=data/gravure.hdf5  --output=gra_out
-  when: 1515863635
-  paths:
-    - train_CVAE-GAN.py
-- cmd: cd hoe/CVAE-GAN/
-  when: 1515864254
-  paths:
-    - hoe/CVAE-GAN/
-- cmd: vi models/cvaegan.py 
-  when: 1515864387
-  paths:
-    - models/cvaegan.py
-- cmd: ll
-  when: 1515866540
-- cmd: cd ..
-  when: 1515866556
-  paths:
-    - ..
-- cmd: cd
-  when: 1515866559
-- cmd: ll
-  when: 1515866560
-- cmd: cd dotfiles/.config/fish/
-  when: 1515866567
-  paths:
-    - dotfiles/.config/fish/
-- cmd: vi config.fish 
-  when: 1515866578
   paths:
     - config.fish

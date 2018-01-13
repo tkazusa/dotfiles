@@ -9,8 +9,8 @@ end
 export XDG_CONFIG_HOME=$HOME/.config
 export TERM=xterm-256color
 
-alias vi 'nvim'
+alias v 'nvim'
 alias ll 'ls -la'
 alias ps 'ps -aux'
 
-set prompt (set_color #00008B)
+set prompt (set_color #00008B)(prompt_pwd)
