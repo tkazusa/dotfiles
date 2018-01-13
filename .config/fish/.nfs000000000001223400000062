@@ -92,6 +92,10 @@
     - init.vim
 - cmd: B
   when: 1515651447
+- cmd: v .config/nvim/init.vim 
+  when: 1515651573
+  paths:
+    - .config/nvim/init.vim
 - cmd: omf
   when: 1515652282
 - cmd: which omf
@@ -587,6 +591,8 @@
   when: 1515839842
   paths:
     - mnist_out/
+- cmd: git status
+  when: 1515840000
 - cmd: rm -r models/__pycache__/
   when: 1515840141
   paths:
@@ -633,10 +639,16 @@
     - models/cvaegan2.py
 - cmd: git commit -m "fix"
   when: 1515840646
+- cmd: v models/cvaegan.py 
+  when: 1515841225
+  paths:
+    - models/cvaegan.py
 - cmd: v matcha_lawson.py 
   when: 1515768973
   paths:
     - matcha_lawson.py
+- cmd: tmux a
+  when: 1515842753
 - cmd: tmux 
   when: 1515842840
 - cmd: exot
@@ -645,6 +657,10 @@
   when: 1515843459
 - cmd: :wq
   when: 1515843985
+- cmd: v .tmux.conf 
+  when: 1515844161
+  paths:
+    - .tmux.conf
 - cmd: cd
   when: 1515844591
 - cmd: fish_config
@@ -663,10 +679,16 @@
   when: 1515845678
   paths:
     - dotfiles/.tmux.conf
+- cmd: tmux
+  when: 1515845724
 - cmd: cd dotfiles/
   when: 1515845730
   paths:
     - dotfiles/
+- cmd: git add .
+  when: 1515845737
+  paths:
+    - .
 - cmd: v test.py
   when: 1515845748
   paths:
@@ -677,6 +699,8 @@
     - test.py
 - cmd: git commit -m "modify .tmux.conf config.fish"
   when: 1515845813
+- cmd: git push origin master
+  when: 1515845822
 - cmd: cd ..
   when: 1515846291
   paths:
@@ -687,10 +711,14 @@
   when: 1515840731
   paths:
     - train_CVAE-GAN.py
+- cmd: ll
+  when: 1515846294
 - cmd: cd hoe/CVAE-GAN/
   when: 1515846306
   paths:
     - hoe/CVAE-GAN/
+- cmd: ll
+  when: 1515846307
 - cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=170 --dataset=data/gravure.hdf5  --output=gra_out
   when: 1515846590
   paths:
@@ -700,31 +728,47 @@
   paths:
     - models/cvaegan.py
 - cmd: tmux a
-  when: 1515842753
+  when: 1515842011
+- cmd: git add .
+  when: 1515846703
+  paths:
+    - .
 - cmd: git commit -m "modify trainable layers"
   when: 1515846720
+- cmd: git push origin master
+  when: 1515846731
 - cmd: tmux
   when: 1515846824
 - cmd: ll
   when: 1515846852
 - cmd: git pull 
   when: 1515846945
+- cmd: git push origin master
+  when: 1515846955
 - cmd: v .config/nvim/init.vim 
   when: 1515847003
   paths:
     - .config/nvim/init.vim
 - cmd: git push origin master
   when: 1515847091
+- cmd: git pull
+  when: 1515847110
 - cmd: rm .config/nvim/init.vim 
   when: 1515847146
   paths:
     - .config/nvim/init.vim
+- cmd: git pull
+  when: 1515847149
+- cmd: git status
+  when: 1515847167
 - cmd: git rm .config/nvim/init.vim
   when: 1515847195
 - cmd: git merge .config/nvim/init.vim
   when: 1515847208
 - cmd: git commit -m "modify init.vim"
   when: 1515847230
+- cmd: git status
+  when: 1515847242
 - cmd: git merge 
   when: 1515847250
 - cmd: v .config/fish/config.fish 
@@ -743,25 +787,3 @@
   when: 1515847358
 - cmd: git commit -m "modify"
   when: 1515847389
-- cmd: git pull
-  when: 1515847401
-- cmd: ll
-  when: 1515847404
-- cmd: cd .config/nvim/
-  when: 1515847408
-  paths:
-    - .config/nvim/
-- cmd: ll
-  when: 1515847410
-- cmd: v init.vim
-  when: 1515847433
-- cmd: cd ..
-  when: 1515847488
-  paths:
-    - ..
-- cmd: cd ../
-  when: 1515847493
-  paths:
-    - ../
-- cmd: git add 
-  when: 1515847497
