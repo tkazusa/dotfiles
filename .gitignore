@@ -2,3 +2,6 @@
 .vim/undo/
 *~
 \#*.*\#
+
+*/fish/.*
+.config/fish/=8.0

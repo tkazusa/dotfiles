@@ -13,4 +13,11 @@ alias v 'nvim'
 alias ll 'ls -la'
 alias ps 'ps -aux'
 
-set prompt (set_color #00008B)(prompt_pwd)
+
+
+function fish_prompt
+    set pwd (set_color normal)(prompt_pwd)
+    set p (set_color green) "> "
+    echo $pwd $p
+end
+

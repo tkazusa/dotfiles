@@ -62,6 +62,10 @@
   when: 1515650799
   paths:
     - .config/fish/
+- cmd: cd .config/fish/
+  when: 1515650805
+  paths:
+    - .config/fish/
 - cmd: cd,
   when: 1515651122
 - cmd: vi plugin.toml
@@ -148,6 +152,8 @@
   when: 1515659518
   paths:
     - run_extracter_median.py
+- cmd: ls
+  when: 1515660516
 - cmd: v bgextracter/extracter/backgroundextracter.py 
   when: 1515660597
   paths:
@@ -259,6 +265,8 @@
     - ../chapter3
 - cmd: :w
   when: 1515761451
+- cmd: cd 
+  when: 1515761472
 - cmd: cp ../chapter2/dollar.py 
   when: 1515761504
   paths:
@@ -623,6 +631,10 @@
   when: 1515845678
   paths:
     - dotfiles/.tmux.conf
+- cmd: cd dotfiles/
+  when: 1515845730
+  paths:
+    - dotfiles/
 - cmd: rm test.py 
   when: 1515845811
   paths:
@@ -651,12 +663,18 @@
   when: 1515847230
 - cmd: git merge 
   when: 1515847250
+- cmd: v .config/fish/config.fish 
+  when: 1515847309
+  paths:
+    - .config/fish/config.fish
 - cmd: v .tmux.conf 
   when: 1515847337
   paths:
     - .tmux.conf
 - cmd: git status
   when: 1515847358
+- cmd: git pull
+  when: 1515847401
 - cmd: cd .config/nvim/
   when: 1515847408
   paths:
@@ -665,6 +683,14 @@
   when: 1515847433
 - cmd: git add 
   when: 1515847497
+- cmd: git add .
+  when: 1515847501
+  paths:
+    - .
+- cmd: git commit -m "modify"
+  when: 1515847503
+- cmd: git push origin master
+  when: 1515847508
 - cmd: help
   when: 1515847725
 - cmd: cd models/
@@ -675,6 +701,10 @@
   when: 1515862653
   paths:
     - cvaegan.py
+- cmd: cd ..
+  when: 1515862738
+  paths:
+    - ..
 - cmd: cd CVAE-GAN/
   when: 1515862746
   paths:
@@ -699,10 +729,20 @@
   when: 1515863152
   paths:
     - ../
+- cmd: cd dotfiles/.config/fish/
+  when: 1515863160
+  paths:
+    - dotfiles/.config/fish/
 - cmd: less config.fish 
   when: 1515863169
   paths:
     - config.fish
+- cmd: vi config.fish 
+  when: 1515863182
+  paths:
+    - config.fish
+- cmd: cd
+  when: 1515863185
 - cmd: cd hoe/
   when: 1515863191
   paths:
@@ -721,6 +761,12 @@
   when: 1515863319
   paths:
     - models/cvaegan.py
+- cmd: exit
+  when: 1515863579
+- cmd: tmux a
+  when: 1515863585
+- cmd: tmux
+  when: 1515863588
 - cmd: htop
   when: 1515863613
 - cmd: python3 train_CVAE-GAN.py --model=cvaegan --epoch=10000 --batchsize=150 --dataset=data/gravure.hdf5  --output=gra_out
@@ -735,10 +781,16 @@
   when: 1515864387
   paths:
     - models/cvaegan.py
+- cmd: ll
+  when: 1515866540
 - cmd: cd ..
   when: 1515866556
   paths:
     - ..
+- cmd: cd
+  when: 1515866559
+- cmd: ll
+  when: 1515866560
 - cmd: cd dotfiles/.config/fish/
   when: 1515866567
   paths:
@@ -755,71 +807,23 @@
   when: 1515866835
 - cmd: git push origin master
   when: 1515866843
+- cmd: exit
+  when: 1515866866
+- cmd: exit
+  when: 1515866875
+- cmd: exit
+  when: 1515866878
+- cmd: exit
+  when: 1515866878
+- cmd: tmux a
+  when: 1515863115
+- cmd: ll
+  when: 1515866883
+- cmd: cd dotfiles/
+  when: 1515866889
+  paths:
+    - dotfiles/
 - cmd: git pull
   when: 1515866891
-- cmd: v .config/fish/config.fish 
-  when: 1515867016
-  paths:
-    - .config/fish/config.fish
-- cmd: cd .config/fish/
-  when: 1515910542
-  paths:
-    - .config/fish/
-- cmd: tmux a
-  when: 1515910569
-- cmd: cd ll
-  when: 1515911014
-- cmd: cd 
-  when: 1515911016
-- cmd: cd dotfiles/
-  when: 1515911251
-  paths:
-    - dotfiles/
-- cmd: l
-  when: 1515911370
-- cmd: ls
-  when: 1515911382
-- cmd: v config.fish 
-  when: 1515911421
-  paths:
-    - config.fish
-- cmd: tmux
-  when: 1515911553
 - cmd: ll
-  when: 1515911556
-- cmd: cd
-  when: 1515911560
-- cmd: exit
-  when: 1515911581
-- cmd: v config.fish 
-  when: 1515911585
-  paths:
-    - config.fish
-- cmd: tmux
-  when: 1515911599
-- cmd: ll
-  when: 1515911627
-- cmd: ls -al
-  when: 1515911647
-- cmd: cd
-  when: 1515911648
-- cmd: ll
-  when: 1515911650
-- cmd: cd dotfiles/
-  when: 1515911673
-  paths:
-    - dotfiles/
-- cmd: git add .
-  when: 1515911675
-  paths:
-    - .
-- cmd: git status
-  when: 1515911681
-- cmd: v .gitignore 
-  when: 1515911724
-  paths:
-    - .gitignore
-- cmd: rm .config/fish/=8.0 
-  when: 1515911796
-  paths:
-    - .config/fish/=8.0
+  when: 1515866902
