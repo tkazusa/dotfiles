@@ -16,8 +16,8 @@ alias ps 'ps -aux'
 
 
 function fish_prompt
-    set pwd (set_color normal)(prompt_pwd)
-    set p (set_color green) "> "
+    set pwd (set_color green)(prompt_pwd)
+    set p (set_color normal) "> "
     echo $pwd $p
 end
 
