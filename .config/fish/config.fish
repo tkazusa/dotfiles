@@ -10,8 +10,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 export TERM=xterm-256color
 
 alias v 'nvim'
-alias ll 'ls -la'
+alias ll 'ls -laGn'
 alias ps 'ps -aux'
+alias ga 'git add'
+alias gc 'git commit -m'
+alias gp 'git push'
 
 
 
@@ -38,6 +41,9 @@ function parse_git_branch
     end
 end
 
+function cd
+    builtin cd $argv; and ll
+end
 
 
 function fish_right_prompt
