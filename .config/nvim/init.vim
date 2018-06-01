@@ -54,7 +54,8 @@ endif
 filetype detect
 
 "terminal emulate
-nnoremap :t :split<CR><C-w>j:terminal<CR>i
+nnoremap ts :split<CR><C-w>j:terminal<CR>i
+nnoremap tv :vsplit<CR><C-w>j:terminal<CR>i
 tnoremap <C-q> <C-\><C-n>:q<CR>
 tnoremap <ESC> <C-\><C-n>
 
