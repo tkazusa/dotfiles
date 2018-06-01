@@ -53,6 +53,10 @@ endif
 
 filetype detect
 
+"terminal emulate
+nnoremap :t :split<CR><C-w>j:terminal<CR>i
+tnoremap <C-q> <C-\><C-n>:q<CR>
+tnoremap <ESC> <C-\><C-n>
 
 " window  split
 nnoremap s <Nop>
