@@ -43,7 +43,9 @@ colorscheme molokai
 syntax enable
 set t_Co=256
 
-" インストールされていないプラグインがあればインストールする
+" NERDTree
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+
 " If you want to install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
@@ -51,4 +53,4 @@ endif
 
 filetype detect
 
-
+autocmd BufNewfile,BufRead *.html setlocal tabstop=4 softtabstop=4 shiftwidth=4

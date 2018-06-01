@@ -9,3 +9,7 @@ repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
