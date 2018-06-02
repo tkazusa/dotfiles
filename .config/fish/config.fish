@@ -21,7 +21,10 @@ alias ll 'ls -laGn'
 alias ps 'ps -aux'
 alias ga 'git add'
 alias gc 'git commit -m'
+alias gs 'git status'
 alias gp 'git push'
+
+alias pc 'peco'
 
 
 
