@@ -18,6 +18,7 @@ export TERM=xterm-256color
 
 alias v 'nvim'
 alias ll 'ls -laGn'
+alias cu 'cd ../'
 alias ps 'ps -aux'
 alias ga 'git add'
 alias gc 'git commit -m'
