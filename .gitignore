@@ -5,3 +5,4 @@
 
 */fish/.*
 .config/fish/=8.0
+fishd.*
