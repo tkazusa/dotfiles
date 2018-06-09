@@ -12,3 +12,6 @@
 !/.vim
 !/install.d
 !/setup.sh
+
+# black list
+/.config/fish/fishd.*
