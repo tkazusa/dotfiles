@@ -11,5 +11,3 @@ ln -s $DOTDIR/.config $HOME
 ln -s $DOTDIR/.bashrc $HOME/.bashrc
 ln -s $DOTDIR/.bash_profile $HOME/.bash_profile
 
-
-  

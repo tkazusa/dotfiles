@@ -1,5 +1,4 @@
 #!/bin/bash
-
 APT_CMD="apt-get install -y"
 
 # common
@@ -25,17 +24,12 @@ cd -
 rm -rf /usr/local/src/tmux-*
 mv tmux-${VERSION} /usr/local/src
 
-## Logout and login to the shell again and run.
-## tmux -V
-echo "export TERM=xterm-256color" >> .bashrc
 
 # build tools
 $APT_CMD make build-essential
 
-
 # for dot / plantuml
 $APT_CMD graphviz
-
 
 # No neovim repository for apt-get
 # add-apt-repository is necessary for add repos
