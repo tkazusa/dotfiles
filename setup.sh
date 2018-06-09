@@ -1,5 +1,4 @@
 #!/bin/bash
-
 DOTFILES_REMOTE=https://github.com/tkazusa/dotfiles
 #DOTDIR=$HOME/src/github.com/tkazusa/dotfiles
 DOTDIR=$HOME/dotfiles
@@ -7,10 +6,8 @@ DOTDIR=$HOME/dotfiles
 # install packages
 if which apt-get > /dev/null; then
    apt-get -y install git
-   # git clone $DOTFILES_REMOTE $DOTDIR
    source $DOTDIR/install.d/apt.sh
    source $DOTDIR/install.d/link.sh
-
 fi
 
 
@@ -27,8 +24,6 @@ fi
 chsh -s /usr/bin/fish
 install oh-my-fish
 curl -L http://get.oh-my.fish | fish  
-
-
 exec fish
 
 install peco plugin to oh-my-fish

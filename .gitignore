@@ -1,8 +1,14 @@
-.vim/.init.vim-rplugin~
-.vim/undo/
-*~
-\#*.*\#
+# all files are ignored
+/*
+/.*
 
-*/fish/.*
-.config/fish/=8.0
-fishd.*
+# white list
+!/.bash_procile
+!/.bashrc
+!/.config
+!/.git
+!/.gitignore
+!/.tmux.conf
+!/.vim
+!/install.d
+!/setup.sh

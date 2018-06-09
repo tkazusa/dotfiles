@@ -1,5 +1,4 @@
 #!/bin/bash
-
 APT_CMD="apt-get install -y"
 
 # common
