@@ -1,13 +1,37 @@
 #!/bin/bash
 APT_CMD="apt-get install -y"
 
-# common
-$APT_CMD gawk git golang vim wget tar libevent-dev libncurses-dev
-
-# tmux
 add-apt-repository -y ppa:pi-rho/dev
 apt-get Update
-apt-get install -y tmux
+
+# common
+$APT_CMD gawk \
+	 git  \
+	 less \
+	 tig \
+	 vim \
+	 wget \
+	 cmake \
+	 byobu \
+	 tmux \
+	 htop \
+	 language-pack-ja\
+	 unzip \
+	 libgtk2.0-dev \
+	 libjpeg-dev \
+	 libpng-dev \
+	 libevent-dev \
+	 libncurses-dev \
+	 python3-numpy \
+	 python-tk \
+	 nscd \
+	 python3-pip \
+	 protobuf-compiler \
+	 python-pil \
+	 python-lxml \
+	 golang \
+	 tar \
+	 grapchviz \
 
 #VERSION=2.5
 #apt-get -y remove tmux
@@ -27,9 +51,7 @@ apt-get install -y tmux
 # build tools
 $APT_CMD make build-essential
 
-# for dot / plantuml
-$APT_CMD graphviz
-
+### Neovim install ###
 # No neovim repository for apt-get
 # add-apt-repository is necessary for add repos
 $APT_CMD software-properties-common
@@ -48,7 +70,7 @@ $APT_CMD neovim
 
 # Prep for python3
 pip3 install --upgrade neovim
-
+pip3 install jedi
 
 #Install fish
 $APT_CMD apt-file
