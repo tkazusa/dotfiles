@@ -8,6 +8,7 @@ if which apt-get > /dev/null; then
    apt-get -y install git
    source $DOTDIR/install.d/apt.sh
    source $DOTDIR/install.d/link.sh
+   source $DOTDIR/install.d/pip3.sh
 fi
 
 
