@@ -69,6 +69,7 @@ apt-get update
 $APT_CMD neovim
 
 # Prep for python3
+pip3 install -U pip
 pip3 install --upgrade neovim
 pip3 install jedi
 

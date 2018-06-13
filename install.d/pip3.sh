@@ -1,2 +1,2 @@
 pip3 install --upgrade pip
-pip3 install -r pip3_requirements.txt
+pip3 install -r requirements.txt
