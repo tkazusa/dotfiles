@@ -91,3 +91,10 @@ nnoremap <silent> <ESC> <C-\><C-n>
 
 
 autocmd BufNewfile,BufRead *.html setlocal tabstop=4 softtabstop=4 shiftwidth=4
+
+augroup Shebang
+  autocmd BufNewFile *.py 0put=\"# -*- encoding: UTF-8 -*-\"|$
+augroup END
+
+
+

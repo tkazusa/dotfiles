@@ -22,6 +22,7 @@ $APT_CMD gawk \
 	 libpng-dev \
 	 libevent-dev \
 	 libncurses-dev \
+	 python3.7 \
 	 python3-numpy \
 	 python-tk \
 	 nscd \

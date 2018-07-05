@@ -61,3 +61,6 @@ function fish_right_prompt
     echo [(parse_git_branch)]
   end
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/root/gcloud/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/root/gcloud/google-cloud-sdk/path.fish.inc'; else; . '/root/gcloud/google-cloud-sdk/path.fish.inc'; end; end
