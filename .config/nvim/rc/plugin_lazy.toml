@@ -30,4 +30,6 @@ hook_post_source = '''
 repo = 'Shougo/neosnippet-snippets'
 on_source = 'neosnippet'
 
-
+[[plugins]]
+repo = "plasticboy/vim-markdown"
+on_ft = ['markdown']
