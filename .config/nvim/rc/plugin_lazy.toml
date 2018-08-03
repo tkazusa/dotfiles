@@ -1,0 +1,33 @@
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+[[plugins]]
+repo = "davidhalter/jedi-vim"
+on_ft = ['python']
+
+[[plugins]]
+repo = 'hynek/vim-python-pep8-indent'
+on_ft = ['python']
+on_i = 1
+
+[[plugins]]
+build = 'pip install flake8'
+repo = 'w0rp/ale'
+on_path = '.*'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+on_i = 1
+hook_post_source = '''
+  source ~/.vim/rc/neosnippet.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+on_source = 'neosnippet'
+
+
