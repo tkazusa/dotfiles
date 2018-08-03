@@ -8,7 +8,7 @@ endfunction
 call s:load_rc('dein')
 call s:load_rc('set')
 call s:load_rc('mapping')
-
+call s:load_rc('lightline')
 
 filetype detect
 
