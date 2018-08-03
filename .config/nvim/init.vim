@@ -10,5 +10,10 @@ call s:load_rc('set')
 call s:load_rc('mapping')
 
 
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \}
+
+
 filetype detect
 
