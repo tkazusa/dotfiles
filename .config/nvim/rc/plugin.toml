@@ -13,3 +13,6 @@ repo = 'Shougo/vimproc.vim'
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 
+
+[[plugins]]
+repo = 'simeji/winresizer'
