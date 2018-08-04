@@ -67,3 +67,8 @@ end
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/root/gcloud/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/root/gcloud/google-cloud-sdk/path.fish.inc'; else; . '/root/gcloud/google-cloud-sdk/path.fish.inc'; end; end
+
+function fish_user_key_bindings
+  bind \c] peco_change_directory 
+end
+
