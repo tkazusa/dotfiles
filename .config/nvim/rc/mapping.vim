@@ -1,3 +1,8 @@
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
 " NERDTree
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 
