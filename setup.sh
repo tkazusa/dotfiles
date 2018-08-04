@@ -27,6 +27,8 @@ install oh-my-fish
 curl -L http://get.oh-my.fish | fish  
 exec fish
 
+# install peco_dir_change function
+# 
 omf install peco
 wget https://storage.googleapis.com/golang/go1.9.3.linux-amd64.tar.gz
 tar -xvf go1.9.3.linux-amd64.tar.gz
