@@ -1,6 +1,9 @@
 export XDG_CONFIG_HOME=$HOME/.config
 export TERM=xterm-256color
 
+set --universal -x GOPATH $HOME/go
+set -x PATH $PATH /usr/local/go/bin $GOPATH/bin 
+
 alias v 'nvim'
 alias ll 'ls -laGn'
 alias cu 'cd ../'
