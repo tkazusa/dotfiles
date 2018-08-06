@@ -23,13 +23,13 @@ fi
 
 #change shell from bash to fish
 chsh -s /usr/bin/fish
-install oh-my-fish
 curl -L http://get.oh-my.fish | fish  
 exec fish
 
 # install peco_dir_change function
 # https://qiita.com/susieyy/items/ac2133e249f252dc9a34
 omf install peco
+omf isntall z
 wget https://storage.googleapis.com/golang/go1.9.3.linux-amd64.tar.gz
 tar -xvf go1.9.3.linux-amd64.tar.gz
 chown -R root:root ./go

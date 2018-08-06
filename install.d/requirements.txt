@@ -26,6 +26,5 @@ quilt==2.9.6
 requests==2.19.0
 six==1.11.0
 tqdm==4.23.4
-unattended-upgrades==0.1
 urllib3==1.23
 xlrd==1.1.0

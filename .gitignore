@@ -15,3 +15,5 @@
 
 # black list
 /.config/fish/fishd.*
+/.config/fish/fish_history
+
