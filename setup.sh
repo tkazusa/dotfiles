@@ -4,12 +4,10 @@ DOTFILES_REMOTE=https://github.com/tkazusa/dotfiles
 DOTDIR=$HOME/dotfiles
 
 # install packages
-if which apt-get > /dev/null; then
-   apt-get -y install git
-   source $DOTDIR/install.d/apt-get.sh
-   source $DOTDIR/install.d/link.sh
-   source $DOTDIR/install.d/pip3.sh
-fi
+apt-get -y install git
+source $DOTDIR/install.d/apt-get.sh
+source $DOTDIR/install.d/link.sh
+source $DOTDIR/install.d/pip3.sh
 
 
 # gitconfig
