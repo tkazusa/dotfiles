@@ -1,33 +1,31 @@
 # FROM gpu-nas01.maas:5000/tensorflow/tensorflow:latest-gpu-py3
-FROM gpu-nas01.maas:5000/yachiyo:18APR-cv3.4-keras2.1.5
+FROM gpu-nas01.maas:5000/latest-gpy-py3
 MAINTAINER Taketoshi Kazusa
 
 #  install jupyter dependencies
 RUN apt-get update && apt-get install -y \
+    cmake \
+    freeglut3-dev \
+    ffmpeg \
     git \
-    less \
-    vim \
-    man \
-    wget \
-    cmake \
-    byobu \
-    tmux \
-    htop \
+    graphviz \
     language-pack-ja \
-    unzip \
-    cmake \
     libgtk2.0-dev \
     libjpeg-dev \
     libpng-dev \
     libtiff-dev \
+    nscd \
     python3-numpy \
     python-tk \
-    nscd \
-    graphviz \
     python3-pip \
     protobuf-compiler \
     python-pil \
     python-lxml \
+    tmux \
+    unzip \
+    vim \
+    xvfb \
+    wget \
     && apt-get -y clean all \
     && rm -rf /var/lib/apt/lists/*
 
@@ -35,8 +33,12 @@ RUN apt-get update && apt-get install -y \
 ENV LANG ja_JP.UTF-8
 RUN update-locale LANG=$LANG
 
+# pip kaggle package
+RUN pip3 install kaggle
+RUN pip3 install --upgrade pip
+
 # install keras
-RUN pip3 install keras==2.0.4
+RUN pip3 install keras==2.2.2
 ENV KERAS_BACKEND=tensorflow
 
 
@@ -46,7 +48,10 @@ RUN pip3 install https://github.com/ipython-contrib/jupyter_contrib_nbextensions
      && jupyter contrib nbextension install --user \
      && jupyter nbextension enable collapsible_headings/main
 
-RUN pip3 install matplotlib scipy scikit-learn scikit-image seaborn h5py pydot-ng click pycuda pillow lxml pulp flake8 Flask 
+RUN pip3 install matplotlib scipy scikit-learn scikit-image seaborn h5py pydot-ng click pycuda pillow lxml pulp flake8 Flask category_encoders lightgbm Cython tqdm 
+
+RUN pip3 install git+https://github.com/aleju/imgaug
+RUN pip3 install git+https://github.com/hyperopt/hyperopt.git
 
 
 # WORKDIR /root

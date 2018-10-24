@@ -10,6 +10,7 @@ $APT_CMD gawk \
 	 less \
 	 tig \
 	 vim \
+         man \
 	 wget \
 	 cmake \
 	 byobu \
