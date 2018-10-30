@@ -14,6 +14,7 @@ alias gs 'git status'
 alias gp 'git push'
 alias gd 'git add .;git commit -m "mod";git push origin master'
 alias pc 'peco'
+alias jl 'jupyter lab --allow-root'
 
 #Path to Oh My Fish install.
 set -q XDG_DATA_HOME
