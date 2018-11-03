@@ -48,7 +48,7 @@ RUN pip3 install https://github.com/ipython-contrib/jupyter_contrib_nbextensions
      && jupyter contrib nbextension install --user \
      && jupyter nbextension enable collapsible_headings/main
 
-RUN pip3 install matplotlib scipy scikit-learn scikit-image seaborn h5py pydot-ng click pycuda pillow lxml pulp flake8 Flask category_encoders lightgbm Cython tqdm 
+RUN pip3 install feather-format matplotlib scipy scikit-learn scikit-image seaborn h5py pydot-ng click pycuda pillow lxml pulp flake8 Flask category_encoders lightgbm Cython tqdm 
 
 RUN pip3 install git+https://github.com/aleju/imgaug
 RUN pip3 install git+https://github.com/hyperopt/hyperopt.git
