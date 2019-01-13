@@ -33,4 +33,6 @@ tar -xvf go1.9.3.linux-amd64.tar.gz
 chown -R root:root ./go
 mv go /usr/local
 
+
+go get -u github.com/derekparker/delve/cmd/dlv
 # go get github.com/motemen/ghq
