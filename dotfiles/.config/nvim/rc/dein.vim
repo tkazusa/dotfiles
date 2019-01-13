@@ -20,10 +20,12 @@ if dein#load_state(s:dein_path)
   let g:rc_dir  = expand('~/.config/nvim/rc')
   let s:toml        = g:rc_dir . '/plugin.toml'
   let s:lazy_toml   = g:rc_dir . '/plugin_lazy.toml'
+  let s:go_toml     = g:rc_dir . '/go.toml'
 
   " TOML 読み込み
   call dein#load_toml(s:toml,      {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
+  call dein#load_toml(s:go_toml, {'lazy': 1})
 
   call dein#end()
   call dein#save_state()
