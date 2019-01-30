@@ -41,7 +41,7 @@ set ambiwidth=double
 set pastetoggle=<f5>
 
 augroup Shebang
-  autocmd BufNewFile *.py 0put=\"# -*- encoding: UTF-8 -*-\"|$
+  autocmd BufNewFile *.py 0put=\"# -*- coding: utf-8 -*-\"|$
 augroup END
 
 let g:SuperTabContextDefaultCompletionType = "context"
