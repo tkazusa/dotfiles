@@ -1,7 +1,7 @@
 #!/bin/bash
 DOTFILES_REMOTE=https://github.com/tkazusa/dotfiles
 #DOTDIR=$HOME/src/github.com/tkazusa/dotfiles
-DOTDIR=$HOME/dotfiles/dotfiles
+DOTDIR=$HOME/dotfiles
 
 # install packages
 apt-get -y install git
