@@ -6,5 +6,21 @@ function! s:load_rc(file)
 endfunction
 
 call s:load_rc('set')
+call s:load_rc('dein')
+call s:load_rc('mapping')
+call s:load_rc('defx')
+
+"---------------------
+" aleの設定
+"---------------------
+let g:ale_linters = {
+      \ 'python': ['flake8'],
+      \}
+
+let g:ale_fixers = {
+      \ 'python': ['autopep8', 'isort'],
+      \}
+
+let g:ale_fix_on_save = 1
 
 filetype detect

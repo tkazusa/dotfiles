@@ -1,0 +1,5 @@
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+
+[[plugins]]
+repo = 'simeji/winresizer'
