@@ -1,10 +1,15 @@
+inoremap <silent>jj <ESC>
+
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-" NERDTree
-nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+" ------------------
+" Defx
+" ------------------
+nnoremap <Space>d :Defx<CR>
+nnoremap <Space>e :vsplit<CR>:Defx<CR>
 
 "terminal emulate
 nnoremap ts :split<CR><C-w>j:terminal<CR>i
@@ -12,8 +17,9 @@ nnoremap tv :vsplit<CR><C-w>j:terminal<CR>i
 tnoremap <C-q> <C-\><C-n>:q<CR>
 tnoremap <ESC> <C-\><C-n>
 
-
+"--------------------
 " window  split
+" -------------------
 nnoremap s <Nop>
 nnoremap ss :split<CR>
 nnoremap sv :vsplit<CR>
@@ -42,3 +48,16 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 nnoremap <silent> <ESC> <C-\><C-n>
+
+"--------------------
+" dein cash clear
+" -------------------
+nnoremap <Space><Space> :call dein#recache_runtimepath()<CR>
+
+"--------------------
+" fzf.vim
+" -------------------
+nnoremap <Space>f : FZFFileList<CR>
+command! FZFFileList call fzf#run(fzf#wrap({
+            \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
+            \ 'up': '30%'}))

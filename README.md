@@ -16,3 +16,7 @@ add-apt-repository ppa:neovim-ppa/stable
 - https://qiita.com/ryutah/items/8a4acdb01ad15ebe99f2
 - https://blog.foresta.me/posts/nvim_and_lsp_for_rust/
 
+
+# fzf.vim
+- vimプラグインマネージャdein.vimでfzfを管理して使う
+- 
