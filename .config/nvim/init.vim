@@ -29,4 +29,10 @@ let g:ale_fix_on_save = 1
 autocmd QuitPre 'call dein#recache_runtimepath()<CR>'
 
 
+"--------------------
+" fzf.vim
+" -------------------
+let g:fzf_layout = { 'up': '15%' }
+let g:fzf_action = {'enter': 'vsplit' }
+
 filetype detect

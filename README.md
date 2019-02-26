@@ -1,6 +1,6 @@
 ```
 docker pull ubuntu:18.04
-docker run -it -d --name my-ubuntu ubuntu:18.04
+ocker run -it -d --name my-ubuntu ubuntu:18.04
 docker attach my-ubuntu
 ```
 
@@ -19,4 +19,8 @@ add-apt-repository ppa:neovim-ppa/stable
 
 # fzf.vim
 - vimプラグインマネージャdein.vimでfzfを管理して使う
-- 
+- https://blog.nijohando.jp/post/fzf-fish-vim/ 
+
+
+# fugitive.vim
+- http://wakame.hatenablog.jp/entry/2017/05/03/222511<Paste>

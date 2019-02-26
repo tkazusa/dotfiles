@@ -1,3 +1,7 @@
+" ------------------
+" Common
+" ------------------
+
 inoremap <silent>jj <ESC>
 
 nnoremap j gj
@@ -52,12 +56,4 @@ nnoremap <silent> <ESC> <C-\><C-n>
 "--------------------
 " dein cash clear
 " -------------------
-nnoremap <Space><Space> :call dein#recache_runtimepath()<CR>
-
-"--------------------
-" fzf.vim
-" -------------------
-nnoremap <Space>f : FZFFileList<CR>
-command! FZFFileList call fzf#run(fzf#wrap({
-            \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
-            \ 'up': '30%'}))
+nnoremap <Space>c :call dein#recache_runtimepath()<CR>
