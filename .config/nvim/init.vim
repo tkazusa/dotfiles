@@ -8,6 +8,8 @@ call s:load_rc('set')
 call s:load_rc('dein')
 call s:load_rc('mapping')
 call s:load_rc('defx')
+call s:load_rc('fzf')
+call s:load_rc('fugitive')
 
 "---------------------
 " aleの設定

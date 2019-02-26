@@ -24,3 +24,6 @@ add-apt-repository ppa:neovim-ppa/stable
 
 # fugitive.vim
 - http://wakame.hatenablog.jp/entry/2017/05/03/222511<Paste>
+
+# z
+https://github.com/jethrokuan/z

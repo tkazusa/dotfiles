@@ -24,7 +24,6 @@ function fish_prompt
     echo $pwd $p
 end
 
-
 #Git
 set git_dirty_color red
 set git_not_dirty_color green
