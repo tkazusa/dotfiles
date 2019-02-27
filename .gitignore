@@ -3,7 +3,7 @@
 /.*
 
 # white list
-!/.bash_procile
+!/.bash_profile
 !/.bashrc
 !/.config
 !/.git
