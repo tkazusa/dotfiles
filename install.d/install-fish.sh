@@ -3,7 +3,9 @@ APT_CMD="apt-get install -y"
 DOTDIR=$HOME/dotfiles
 
 # fish
-$APT_CMD fish
+apt-add-repository ppa:fish-shell/release-3
+apt-get update
+$APT_CMD install fish
 
 # fisher
 curl https://git.io/fisher --create-dirs -sLo $DOTDIR/.config/fish/functions/fisher.fish
