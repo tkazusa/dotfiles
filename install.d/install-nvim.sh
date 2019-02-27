@@ -9,8 +9,6 @@ $APT_CMD neovim \
 	python-dev \
 	python-pip \
 	python3-dev \
-	python3-pip \
-	python-neovim \
-	python3-neovim
+	python3-pip
 
 pip3 install pynvim
