@@ -1,8 +1,1 @@
-
-pip3 install \
-  # for ALE
-  autopep8 \
-  flake8 \
-  isort \
-  # for LSP
-  python-language-server  
+pip3 install autopep8 flake8 isort python-language-server  
