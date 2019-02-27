@@ -11,8 +11,8 @@ $APT_CMD \
 	cmake  \
 	less   \
 	man    \
-	pip3   \
-  rsync  \
+	python3-pip \
+  	rsync  \
 	tmux   \ 
 	unzip  \
 	vim    \
