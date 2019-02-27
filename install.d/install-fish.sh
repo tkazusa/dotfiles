@@ -6,4 +6,4 @@ DOTDIR=$HOME/dotfiles
 $APT_CMD fish
 
 # fisher
-curl https://git.io/fisher --create-dirs -sLo DOTDIR/.config/fish/functions/fisher.fish
+curl https://git.io/fisher --create-dirs -sLo $DOTDIR/.config/fish/functions/fisher.fish
