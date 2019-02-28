@@ -1,0 +1,19 @@
+# all files are ignored
+/*
+/.*
+
+# white list
+!/.bash_profile
+!/.bashrc
+!/.config
+!/.git
+!/.gitignore
+!/.tmux.conf
+!/.vim
+!/install.d
+!/setup.sh
+
+# black list
+/.config/fish/fishd.*
+/.config/fish/fish_history
+

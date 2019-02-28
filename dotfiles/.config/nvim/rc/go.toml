@@ -1,8 +1,0 @@
-[[plugins]] # goコマンド補完
-repo = 'fatih/vim-go'
-on_ft = 'go'
-
-[[plugins]] # vim-go代替
-repo = 'zchee/nvim-go'
-build = 'make'
-on_ft = 'go'
