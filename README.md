@@ -20,7 +20,8 @@ add-apt-repository ppa:neovim-ppa/stable
 # fzf.vim
 - vimプラグインマネージャdein.vimでfzfを管理して使う
 - https://blog.nijohando.jp/post/fzf-fish-vim/ 
-
+- git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+- ~/.fzf/install
 
 # fugitive.vim
 - http://wakame.hatenablog.jp/entry/2017/05/03/222511<Paste>
