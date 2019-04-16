@@ -1,7 +1,5 @@
 
 #!/bin/bash
-DOTDIR=$HOME/dotfiles
-
 TMUXDIR=$HOME/.tmux.conf
 if [ -e $TMUXDIR ]; then
 	rm -r $TMUXDIR
