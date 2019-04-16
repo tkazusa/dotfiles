@@ -1,5 +1,5 @@
 #!/bin/bash
-DOTDIR=$HOME/dotfiles
+DOTDIR=$HOME/.dotfiles
 
 # --------------------
 # Install packages
