@@ -1,12 +1,16 @@
 ```
 docker pull ubuntu:18.04
-docker run -it -d --name my-ubuntu ubuntu:18.04
+docker run -it -d --name my-ubuntu ubuntu:18.04 --mount type=bind,source=XXX,target=XXX
 docker attach my-ubuntu
 ```
 
 ```
 apt-get update
 apt-get install git
+cd $HOME 
+git clone https://github.com/tkazusa/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+setup.sh
 ```
 
 
