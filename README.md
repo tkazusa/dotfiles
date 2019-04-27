@@ -6,7 +6,7 @@ docker run -it -d --name my-ubuntu ubuntu:18.04 --mount type=bind,source=XXX,tar
 docker attach my-ubuntu
 ```
 
-At the container, clone the repository and run setup.sh.
+In the container, clone this repository and run setup.sh.
 ```
 apt-get update
 apt-get install git
