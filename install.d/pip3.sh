@@ -1,1 +1,1 @@
-pip3 install autopep8 flake8 isort python-language-server  
+pip3 install autopep8 flake8 isort neovim python-language-server  
