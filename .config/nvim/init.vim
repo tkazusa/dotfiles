@@ -10,6 +10,7 @@ call s:load_rc('mapping')
 call s:load_rc('defx')
 call s:load_rc('fzf')
 call s:load_rc('fugitive')
+call s:load_rc('LanguageClient-neovim')
 
 "---------------------
 " aleの設定
